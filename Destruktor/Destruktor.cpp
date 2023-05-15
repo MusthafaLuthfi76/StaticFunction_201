@@ -6,11 +6,18 @@ private :
     int* arr;
     int panjang;
 public :
-    angka(int);         //Constructor
-    ~angka();           //Destructor
+    angka(int);             //Constructor
+    ~angka();               //Destructor
     void cetakdata();
     void isidata();
 };
+
+//Definisi member function
+angka::angka(int i) {       //Constructor
+    panjang = i;
+    arr = new int[i];
+    isidata();
+}
 
 int main()
 {
