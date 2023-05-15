@@ -14,6 +14,11 @@ public :
     void cetak();
 };
 
+mahasiswa::mahasiswa() {
+    nim = 0;
+    nama = "";
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
